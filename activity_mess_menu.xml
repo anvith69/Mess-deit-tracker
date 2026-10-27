@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <include layout="@layout/layout_header" />
+
+    <TextView
+        android:id="@+id/menuSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/text_muted"
+        android:textSize="14sp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/mealTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:tabIndicatorColor="@color/brand_green"
+        app:tabSelectedTextColor="@color/brand_green"
+        app:tabTextColor="@color/text_muted" />
+
+    <TextView
+        android:id="@+id/menuHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Tap a food for details, or use + Log for one serving. Long-press your own foods to delete."
+        android:textColor="@color/text_muted"
+        android:textSize="13sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/foodList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingTop="10dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:stateListAnimator="@null"
+        android:id="@+id/addFoodButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/outline_button"
+        android:backgroundTint="@null"
+        android:text="+ Add custom food"
+        android:textAllCaps="false"
+        android:textColor="@color/brand_green"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:stateListAnimator="@null"
+        android:id="@+id/openTrackerButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/primary_button"
+        android:backgroundTint="@null"
+        android:text="View today's diet tracker"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

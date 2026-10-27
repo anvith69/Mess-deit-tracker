@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/card_background"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/logTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_dark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/logSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_muted"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/logKcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/brand_green"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/logDelete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="Delete entry"
+        android:gravity="center"
+        android:text="✕"
+        android:textColor="@color/error_red"
+        android:textSize="18sp" />
+
+</LinearLayout>

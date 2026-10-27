@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- White background for the secondary button -->
+    <solid android:color="#FFFFFF" />
+
+    <!-- Rounded corners -->
+    <corners android:radius="16dp" />
+
+    <!-- Green outline -->
+    <stroke
+        android:width="2dp"
+        android:color="#207B52" />
+
+</shape>

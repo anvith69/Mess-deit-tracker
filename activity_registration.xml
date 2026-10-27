@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAF0EC"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8FAF7"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="Create account"
+            android:textColor="#18231D"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:text="Your details are used to calculate your daily calorie and protein goals."
+            android:textColor="#59645D"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#18231D"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/input_background"
+            android:hint="Your name"
+            android:inputType="textPersonName"
+            android:padding="14dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration no. (optional, can be used to log in)"
+            android:textColor="#18231D"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/regNoInput"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/input_background"
+            android:hint="e.g. 240970001"
+            android:inputType="text"
+            android:padding="14dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textColor="#18231D"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ageInput"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/input_background"
+            android:hint="Enter your age"
+            android:inputType="number"
+            android:padding="14dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height (cm)"
+            android:textColor="#18231D"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/heightInput"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/input_background"
+            android:hint="Enter height in cm"
+            android:inputType="numberDecimal"
+            android:padding="14dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight (kg)"
+            android:textColor="#18231D"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/weightInput"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/input_background"
+            android:hint="Enter weight in kg"
+            android:inputType="numberDecimal"
+            android:padding="14dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textColor="#18231D"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/genderSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/spinner_background"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity level"
+            android:textColor="#18231D"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/activitySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/spinner_background"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#18231D"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/registrationEmailInput"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:background="@drawable/input_background"
+            android:hint="you@learner.manipal.edu"
+            android:inputType="textEmailAddress"
+            android:padding="14dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password (min 6 characters)"
+            android:textColor="#18231D"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/registrationPasswordInput"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="22dp"
+            android:background="@drawable/input_background"
+            android:hint="Create a password"
+            android:inputType="textPassword"
+            android:padding="14dp"
+            android:singleLine="true" />
+
+        <androidx.appcompat.widget.AppCompatButton
+        android:stateListAnimator="@null"
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:background="@drawable/primary_button"
+            android:backgroundTint="@null"
+            android:text="Create account"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/registrationStatusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:textColor="#B3261E"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/backToLoginText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="18dp"
+            android:text="Already have an account? Log in"
+            android:textColor="#207B52"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

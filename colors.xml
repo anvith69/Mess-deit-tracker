@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="brand_green">#207B52</color>
+    <color name="screen_bg">#EAF0EC</color>
+    <color name="text_dark">#18231D</color>
+    <color name="text_muted">#59645D</color>
+    <color name="warn_amber">#C77700</color>
+    <color name="error_red">#B3261E</color>
+    <color name="track_grey">#D5DED8</color>
+</resources>

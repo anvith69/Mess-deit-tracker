@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Light-only green theme (the layouts use fixed light colours). -->
+    <style
+        name="Base.Theme.MiniProject"
+        parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/brand_green</item>
+        <item name="android:windowBackground">@color/screen_bg</item>
+        <item name="android:statusBarColor">@color/screen_bg</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style
+        name="Theme.MiniProject"
+        parent="Base.Theme.MiniProject" />
+
+</resources>
